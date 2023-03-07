@@ -3,9 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 package etu1880.framework.servet;
+import etu1880.framework.Mapping;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -13,6 +16,8 @@ import jakarta.servlet.http.HttpServletResponse;
 
 
 public class FrontServlet extends HttpServlet {
+
+    HashMap<String,Mapping> MappingUrls;
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
